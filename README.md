@@ -1,4 +1,4 @@
-# <Project Name>
+# Releaf-Book
 
 > Replace every angle-bracket placeholder below. The hygiene check in CI will
 > fail until you do.
@@ -7,17 +7,17 @@
 
 | Roll No. | Name | GitHub username |
 |---|---|---|
-| <roll> | <name> | <username> |
+| 24ESKCS077 | Ayush Pilania | AyushPilania |
 
 ## About
 
-<Two or three sentences on what this application does.>
+Releaf-Book servers as a bridge between sellers(previous owners) and buyers of 2nd hand books.
 
 ## Tech stack
 
-- Frontend: <e.g. React>
-- Backend: <e.g. Node.js / Express>
-- Database: <e.g. PostgreSQL>
+- Frontend: HTML CSS
+- Backend: JS
+- Database: MySQL
 
 ## Running locally
 
