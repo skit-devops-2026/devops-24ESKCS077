@@ -65,7 +65,7 @@ echo "4. Checking JavaScript files..."
 
 js_count=$(find js -type f -name "*.js" | wc -l)
 
-if [ "$js_count" -gt 0 ]; then
+if [ "$js_count" -eq 0 ]; then
     echo "FAIL: No JavaScript files found"
     exit 1
 fi
