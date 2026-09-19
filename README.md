@@ -13,6 +13,16 @@
 
 Releaf-Book servers as a bridge between sellers(previous owners) and buyers of 2nd hand books.
 
+## Project Overview
+
+This project is a full-stack application developed as part of the
+B.Tech CSE Full Stack Development Lab.
+
+## Technologies Used - 
+MERN Stack
+
+This project is maintained using Git and GitHub.
+
 ## Tech stack
 
 - Frontend: HTML CSS
