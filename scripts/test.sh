@@ -167,6 +167,22 @@ fi
 
 echo "PASS: Found $image_count image files."
 
+
+echo
+echo "10. Checking README..."
+
+if [ ! -f "README.md" ]; then
+    echo "FAIL: README.md is missing"
+    exit 1
+fi
+
+if [ ! -s "README.md" ]; then
+    echo "FAIL: README.md is empty"
+    exit 1
+fi
+
+echo "PASS: README.md exists and is not empty."
+
 echo
 echo "========================================"
 echo "ALL PROJECT TESTS PASSED"
