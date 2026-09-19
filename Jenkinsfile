@@ -17,11 +17,12 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'if not exist build mkdir build'
-                bat 'xcopy /E /I /Y *.html build'
-                bat 'xcopy /E /I /Y css build\\css'
-                bat 'xcopy /E /I /Y js build\\js'
-                bat 'xcopy /E /I /Y images build\\images'
+                bat 'if exist build rmdir /S /Q build'
+                bat 'mkdir build'
+                bat 'xcopy /E /I /Y *.html build\\'
+                bat 'xcopy /E /I /Y css build\\css\\'
+                bat 'xcopy /E /I /Y js build\\js\\'
+                bat 'xcopy /E /I /Y images build\\images\\'
             }
         }
     }
