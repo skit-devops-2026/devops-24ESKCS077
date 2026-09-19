@@ -19,4 +19,4 @@ Book browsing with images and details
 Tech stack->
 Frontend: HTML, CSS, JavaScript (static, no framework)
 Backend: None — Releaf-Book is a static site; all logic runs client-side in the browser
-Database: None currently used
+Database: MySQL
