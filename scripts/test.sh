@@ -184,6 +184,16 @@ fi
 echo "PASS: README.md exists and is not empty."
 
 echo
+echo "11. Checking .gitignore..."
+
+if [ ! -f ".gitignore" ]; then
+    echo "FAIL: .gitignore is missing"
+    exit 1
+fi
+
+echo "PASS: .gitignore exists."
+
+echo
 echo "========================================"
 echo "ALL PROJECT TESTS PASSED"
 echo "========================================"
