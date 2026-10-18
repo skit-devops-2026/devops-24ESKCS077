@@ -17,12 +17,18 @@ pipeline {
 
         stage('Build') {
             steps {
+                bat 'echo Building Releaf-Book project...'
                 bat 'if exist build rmdir /S /Q build'
                 bat 'mkdir build'
-                bat 'xcopy /E /I /Y *.html build\\'
-                bat 'xcopy /E /I /Y css build\\css\\'
-                bat 'xcopy /E /I /Y js build\\js\\'
-                bat 'xcopy /E /I /Y images build\\images\\'
+                bat 'copy /Y index.html build\\'
+                bat 'copy /Y home.html build\\'
+                bat 'copy /Y login.html build\\'
+                bat 'copy /Y register.html build\\'
+                bat 'copy /Y listing.html build\\'
+                bat 'copy /Y sell.html build\\'
+                bat 'copy /Y bought.html build\\'
+                bat 'copy /Y sold.html build\\'
+                bat 'copy /Y wishlist.html build\\'
             }
         }
     }
